@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeadSeeder Blog - Latest Marketing & Sales Insights</title>
+    <meta name="description" content="Discover the latest insights on B2B marketing, sales automation, and lead generation strategies in the LeadSeeder blog.">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="../" class="logo">
+                <img src="https://static.wixstatic.com/media/6218bc_5bddfa0430694a6a96d91039e05d8b48~mv2.png/v1/fill/w_195,h_47,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6218bc_5bddfa0430694a6a96d91039e05d8b48~mv2.png" alt="LeadSeeder Logo" width="195" height="47">
+            </a>
+            <nav class="nav-container">
+                <div class="nav-menu">
+                    <a href="../#features">Features</a>
+                    <a href="../#pricing">Pricing</a>
+                    <a href="../#integrations">Integrations</a>
+                    <a href="blog.html" class="active">Blog</a>
+                    <div class="nav-buttons">
+                        <a href="../#login" class="btn-login">Log in</a>
+                        <a href="../#start" class="btn-primary">
+                            <i class="fas fa-rocket"></i> Get Started
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="blog-main">
+        <section class="blog-hero">
+            <div class="container">
+                <h1>LeadSeeder Blog</h1>
+                <p class="subtitle">Insights and strategies for B2B growth</p>
+                <div class="search-container">
+                    <input type="search" placeholder="Search articles..." id="blog-search">
+                    <button type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-categories">
+            <div class="container">
+                <div class="category-tags">
+                    <button class="category-tag active" data-category="all">All</button>
+                    <button class="category-tag" data-category="marketing">Marketing</button>
+                    <button class="category-tag" data-category="sales">Sales</button>
+                    <button class="category-tag" data-category="automation">Automation</button>
+                    <button class="category-tag" data-category="tips">Tips & Tricks</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-posts">
+            <div class="container">
+                <h2>Featured Articles</h2>
+                <div class="featured-grid">
+                    <article class="featured-post">
+                        <div class="post-image">
+                            <img src="https://via.placeholder.com/600x400" alt="Featured post image">
+                        </div>
+                        <div class="post-content">
+                            <span class="category">Marketing</span>
+                            <h3>10 Proven Strategies to Generate B2B Leads in 2025</h3>
+                            <p>Discover the most effective strategies that successful B2B companies are using to generate quality leads...</p>
+                            <div class="post-meta">
+                                <span class="date">January 20, 2025</span>
+                                <span class="read-time">5 min read</span>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- More featured posts will be dynamically added -->
+                </div>
+            </div>
+        </section>
+
+        <section class="latest-posts">
+            <div class="container">
+                <h2>Latest Articles</h2>
+                <div class="posts-grid">
+                    <!-- Posts will be dynamically populated -->
+                </div>
+                <div class="load-more">
+                    <button id="load-more-posts" class="btn-primary">Load More Articles</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-signup">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Stay Updated</h2>
+                    <p>Get the latest insights delivered to your inbox</p>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="blog.js"></script>
+</body>
+</html>
