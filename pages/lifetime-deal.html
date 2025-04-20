@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leadseeder Lifetime Deal</title>
+    <meta name="description" content="Get Leadseeder at a one-time price with our exclusive lifetime deal">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .ltd-hero {
+            background: linear-gradient(135deg, #1a1c2f, #2d3250);
+            color: white;
+            padding: 8rem 1rem;
+            text-align: center;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            margin-bottom: 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .deal-badge {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        .deal-badge span {
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .ltd-hero h1 {
+            font-size: 4.5rem;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+
+        .ltd-hero h1 .highlight {
+            color: #4ade80;
+        }
+
+        .hero-cta .btn-primary {
+            padding: 1.5rem 3rem;
+            font-size: 1.2rem;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            background: linear-gradient(45deg, #0072ff, #00c6ff);
+            border: none;
+            margin: 0 auto 1.5rem;
+        }
+
+        .cta-text {
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        .cta-price {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .cta-guarantee {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            justify-content: center;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem 2rem;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #4ade80;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .ltd-hero .subtitle {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+        }
+
+        .hero-cta .btn-primary {
+            padding: 1.2rem 3rem;
+            font-size: 1.2rem;
+            border-radius: 12px;
+        }
+
+        .ltd-pricing {
+            padding: 6rem 1rem;
+        }
+
+        .ltd-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        .ltd-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .ltd-features {
+            padding: 6rem 1rem;
+        }
+
+        .feature-card {
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .ltd-cta {
+            border-radius: 40px;
+            margin: 4rem 1rem;
+            padding: 6rem 1rem;
+        }
+
+        .ltd-testimonials {
+            padding: 6rem 1rem;
+        }
+
+        .testimonial-card {
+            border-radius: 20px;
+            padding: 2.5rem;
+        }
+
+        .testimonial-card.premium-card {
+            background: linear-gradient(145deg, #1a1c2f, #2d3250);
+            border-radius: 30px;
+            padding: 2.5rem;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            border: 1px solid rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            max-width: 800px;
+            margin: 2rem auto;
+        }
+
+        .premium-card .video-container {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            margin-bottom: 2rem;
+        }
+
+        .premium-card .testimonial-content {
+            background: rgba(255,255,255,0.05);
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .premium-card .testimonial-content p {
+            color: rgba(255,255,255,0.9);
+            font-size: 1.1rem;
+            line-height: 1.6;
+            text-align: center;
+            margin: 0;
+        }
+
+        .premium-card .testimonial-author {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .premium-card .testimonial-author img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 3px solid rgba(255,255,255,0.1);
+        }
+
+        .premium-card .author-info h4 {
+            color: white;
+            margin: 0;
+            font-size: 1.2rem;
+        }
+
+        .premium-card .author-info p {
+            color: rgba(255,255,255,0.7);
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        .faq-section {
+            padding: 6rem 1rem;
+        }
+
+        .faq-item {
+            border-radius: 20px;
+            padding: 1.5rem;
+        }
+
+        .people-love {
+            padding: 6rem 1rem;
+        }
+
+        .love-card {
+            border-radius: 20px;
+            padding: 2rem;
+        }
+
+        .timer-banner {
+            border-radius: 0 0 20px 20px;
+            padding: 1.2rem;
+        }
+
+        .hero-badge {
+            margin-top: 1rem;
+            display: flex;
+            gap: 0.5rem;
+            justify-content: center;
+        }
+        .hero-badge span {
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            font-size: 0.9rem;
+        }
+        .ltd-card h3 {
+            color: #2d4b8e;
+            margin-bottom: 1rem;
+        }
+        .ltd-card .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1a2c56;
+        }
+        .ltd-card .price small {
+            font-size: 1rem;
+            color: #666;
+        }
+        .ltd-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 2rem 0;
+        }
+        .ltd-card ul li {
+            padding: 0.5rem 0;
+            display: flex;
+            align-items: center;
+        }
+        .ltd-card ul li i {
+            color: #2d4b8e;
+            margin-right: 0.5rem;
+        }
+        .ltd-cta h2 {
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+        .ltd-cta p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2rem;
+        }
+        .ltd-features {
+            text-align: center;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .feature-card i {
+            font-size: 2rem;
+            color: #2d4b8e;
+            margin-bottom: 1rem;
+        }
+        .feature-card h3 {
+            color: #2d4b8e;
+            margin-bottom: 0.5rem;
+        }
+        .feature-card p {
+            color: #666;
+        }
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .card-header {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .price-note {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        .popular-badge {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: linear-gradient(45deg, #0072ff, #00c6ff);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0 0 0 12px;
+            font-size: 0.9rem;
+        }
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .testimonial-content {
+            margin-bottom: 1rem;
+        }
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .testimonial-author img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 1rem;
+        }
+        .author-info {
+            text-align: left;
+        }
+        .author-info h4 {
+            color: #2d4b8e;
+            margin-bottom: 0.25rem;
+        }
+        .author-info p {
+            color: #666;
+        }
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+        }
+        .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            display: none;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 1rem;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
+        .comparison-section {
+            padding: 6rem 1rem;
+            background: linear-gradient(145deg, #1a1c2f, #2d3250);
+            color: white;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+
+        .comparison-table {
+            margin-top: 2rem;
+            overflow-x: auto;
+            padding: 1rem;
+        }
+
+        .comparison-table table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: rgba(255,255,255,0.05);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            overflow: hidden;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 1.5rem;
+            text-align: center;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .comparison-table th {
+            background: rgba(255,255,255,0.05);
+            color: white;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .comparison-table tr:hover {
+            background: rgba(255,255,255,0.03);
+        }
+
+        .comparison-table .fa-check-circle {
+            color: #4ade80;
+            font-size: 1.2rem;
+        }
+
+        .comparison-table .fa-check {
+            color: rgba(255,255,255,0.7);
+        }
+
+        .comparison-table .fa-times {
+            color: #f87171;
+        }
+
+        .comparison-table td:first-child {
+            text-align: left;
+            font-weight: 500;
+            color: rgba(255,255,255,0.9);
+        }
+
+        .brand-header {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            justify-content: center;
+        }
+
+        .brand-logo {
+            width: 100%;
+            height: 30px;
+            border-radius: 6px;
+        }
+
+        .brand-name {
+            font-weight: 600;
+        }
+
+        .leadseeder-column {
+            background: rgba(74, 222, 128, 0.05);
+        }
+
+        .highlight {
+            font-weight: 600;
+            color: #4ade80;
+        }
+
+        .feature-column {
+            min-width: 200px;
+        }
+
+        .consultation-section {
+            padding: 6rem 1rem;
+            background: linear-gradient(145deg, #1a1c2f, #2d3250);
+        }
+
+        .consultation-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 30px;
+            padding: 4rem 2rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .consultation-content h2 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .consultation-subtitle {
+            color: rgba(255,255,255,0.8);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .consultation-options {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .consultation-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 1.2rem 2.5rem;
+            border-radius: 15px;
+            background: linear-gradient(45deg, #0072ff, #00c6ff);
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .consultation-btn i {
+            font-size: 1.2rem;
+        }
+
+        .consultation-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        @media (max-width: 600px) {
+            .consultation-card {
+                padding: 3rem 1.5rem;
+            }
+            
+            .consultation-content h2 {
+                font-size: 2rem;
+            }
+            
+            .consultation-btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        /* Starter Plan */
+        .ltd-card:nth-child(1) {
+            border-color: #7fd1b9;
+        }
+        .ltd-card:nth-child(1) .card-header {
+            background: linear-gradient(145deg, #7fd1b9, #6ab8a3);
+            margin: -2.5rem -2.5rem 2rem -2.5rem;
+            padding: 2.5rem;
+            border-radius: 20px 20px 0 0;
+        }
+        .ltd-card:nth-child(1) h3 {
+            color: white;
+        }
+        .ltd-card:nth-child(1) .price {
+            color: white;
+        }
+
+        /* Pro Plan */
+        .ltd-card:nth-child(2) {
+            border-color: #6c8cff;
+        }
+        .ltd-card:nth-child(2) .card-header {
+            background: linear-gradient(145deg, #6c8cff, #5a7ae6);
+            margin: -2.5rem -2.5rem 2rem -2.5rem;
+            padding: 2.5rem;
+            border-radius: 20px 20px 0 0;
+        }
+        .ltd-card:nth-child(2) h3 {
+            color: white;
+        }
+        .ltd-card:nth-child(2) .price {
+            color: white;
+        }
+
+        /* Agency Plan */
+        .ltd-card:nth-child(3) {
+            border-color: #ff8b8b;
+        }
+        .ltd-card:nth-child(3) .card-header {
+            background: linear-gradient(145deg, #ff8b8b, #e67a7a);
+            margin: -2.5rem -2.5rem 2rem -2.5rem;
+            padding: 2.5rem;
+            border-radius: 20px 20px 0 0;
+        }
+        .ltd-card:nth-child(3) h3 {
+            color: white;
+        }
+        .ltd-card:nth-child(3) .price {
+            color: white;
+        }
+
+        /* Party Animation Styles */
+        @keyframes confetti {
+            0% { transform: translateY(-100vh) rotate(0deg); }
+            100% { transform: translateY(100vh) rotate(360deg); }
+        }
+
+        .confetti {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            background: #ffd700;
+            animation: confetti 5s linear infinite;
+            z-index: 1000;
+            pointer-events: none;
+        }
+
+        .confetti:nth-child(2n) {
+            background: #ff6b6b;
+        }
+
+        .confetti:nth-child(3n) {
+            background: #6c8cff;
+        }
+
+        .confetti:nth-child(4n) {
+            background: #4ade80;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(10deg); }
+            100% { transform: translateY(0) rotate(0deg); }
+        }
+
+        .party-text {
+            animation: float 3s ease-in-out infinite;
+            display: inline-block;
+        }
+
+        /* Ratings Section Styles */
+        .ratings-section {
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        .ratings-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .rating-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+
+        .platform-logo {
+            width: 100px;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        .stars {
+            color: #ffc107;
+            margin-bottom: 0.5rem;
+        }
+
+        .rating-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2d4b8e;
+            margin-bottom: 0.25rem;
+        }
+
+        .rating-count {
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Timer Banner -->
+    <div class="timer-banner">
+        ⏰ Limited Time Offer: <span>24 hours</span> left to grab this lifetime deal!
+    </div>
+
+    <!-- Hero Section -->
+    <section class="ltd-hero">
+        <div class="container">
+            <div class="deal-badge">
+                <span>🔥 Limited Time Offer</span>
+                <span>🎉 Exclusive Lifetime Deal</span>
+            </div>
+            <h1>Unlock Leadseeder <span class="highlight party-text">Forever</span></h1>
+            <p class="subtitle">Automate your LinkedIn outreach with Leadseeder's powerful features at a <strong>one-time price</strong></p>
+            <div class="hero-cta">
+                <a href="#pricing" class="btn-primary">
+                    <span class="cta-text">Get Lifetime Access</span>
+                    <span class="cta-price">Starting at $297</span>
+                </a>
+                <div class="cta-guarantee">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>30-Day Money Back Guarantee</span>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">10,000+</div>
+                    <div class="stat-label">LinkedIn Connections Made</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-label">Customer Satisfaction</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Support Available</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="ltd-features">
+        <div class="container">
+            <h2>Why Choose Leadseeder?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Automated Outreach</h3>
+                    <p>Save hours with automated LinkedIn connection requests and follow-ups</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Advanced Analytics</h3>
+                    <p>Track campaign performance with detailed analytics and insights</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Multi-Account Support</h3>
+                    <p>Manage multiple LinkedIn accounts from a single dashboard</p>
+                </div>
+            </div>
+            
+            <!-- Add Ratings Section -->
+            <div class="ratings-section">
+                <h3>Trusted by Thousands of Users</h3>
+                <div class="ratings-grid">
+                    <div class="rating-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Google_Chrome_Web_Store_icon_2022.svg/120px-Google_Chrome_Web_Store_icon_2022.svg.png" alt="Chrome Store" class="platform-logo">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="rating-value">4.7/5</div>
+                        <div class="rating-count">1,200+ reviews</div>
+                    </div>
+                    <div class="rating-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/38/G2_Crowd_logo.svg/250px-G2_Crowd_logo.svg.png" alt="G2" class="platform-logo">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="rating-value">5/5</div>
+                        <div class="rating-count">800+ reviews</div>
+                    </div>
+                    <div class="rating-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Trustpilot_Logo_%282022%29.svg/250px-Trustpilot_Logo_%282022%29.svg.png" alt="Trustpilot" class="platform-logo">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="rating-value">5/5</div>
+                        <div class="rating-count">500+ reviews</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="ltd-pricing" id="pricing">
+        <div class="container">
+            <h2>Choose Your Plan</h2>
+            <p class="pricing-subtitle">One-time payment for lifetime access</p>
+            <div class="pricing-grid">
+                <div class="ltd-card">
+                    <div class="card-header">
+                        <h3>Starter</h3>
+                        <div class="price">$297</div>
+                        <p class="price-note">Save $600+ annually</p>
+                        <a href="#" class="btn-primary">Get Started</a>
+                    </div>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> 1 LinkedIn Account</li>
+                        <li><i class="fas fa-check-circle"></i> 100 Daily Actions</li>
+                        <li><i class="fas fa-check-circle"></i> Basic Analytics</li>
+                        <li><i class="fas fa-check-circle"></i> Email Support</li>
+                    </ul>
+                    <div class="savings-badge">Best for Individuals</div>
+                </div>
+                <div class="ltd-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="card-header">
+                        <h3>Pro</h3>
+                        <div class="price">$497</div>
+                        <p class="price-note">Save $1000+ annually</p>
+                        <a href="#" class="btn-primary">Get Started</a>
+                    </div>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> 3 LinkedIn Accounts</li>
+                        <li><i class="fas fa-check-circle"></i> 200 Daily Actions</li>
+                        <li><i class="fas fa-check-circle"></i> Advanced Analytics</li>
+                        <li><i class="fas fa-check-circle"></i> Priority Support</li>
+                        <li><i class="fas fa-check-circle"></i> Custom Campaigns</li>
+                    </ul>
+                    <div class="savings-badge">Best for Teams</div>
+                </div>
+                <div class="ltd-card">
+                    <div class="card-header">
+                        <h3>Agency</h3>
+                        <div class="price">$997</div>
+                        <p class="price-note">Save $2000+ annually</p>
+                        <a href="#" class="btn-primary">Get Started</a>
+                    </div>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> 10 LinkedIn Accounts</li>
+                        <li><i class="fas fa-check-circle"></i> 500 Daily Actions</li>
+                        <li><i class="fas fa-check-circle"></i> White Label Option</li>
+                        <li><i class="fas fa-check-circle"></i> Dedicated Account Manager</li>
+                        <li><i class="fas fa-check-circle"></i> API Access</li>
+                    </ul>
+                    <div class="savings-badge">Best for Agencies</div>
+                </div>
+            </div>
+            <div class="pricing-footer">
+                <p>All plans include 30-day money back guarantee and free updates for life</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="ltd-testimonials">
+        <div class="container">
+            <h2>What Our Users Say</h2>
+            <div class="testimonial-card premium-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="testimonial-content">
+                    <p>"Leadseeder has transformed our LinkedIn outreach. The automation features save us hours every week, and the analytics help us optimize our campaigns effectively. The lifetime deal is the best investment we've made!"</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="user1.jpg" alt="John Doe">
+                    <div class="author-info">
+                        <h4>John Doe</h4>
+                        <p>Marketing Director at Acme Corp</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="comparison-section">
+        <div class="container">
+            <h2 class="section-title">Leadseeder vs. Competitors</h2>
+            <p class="section-subtitle">See how we stack up against the competition</p>
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="feature-column">Feature</th>
+                            <th class="leadseeder-column">
+                                <div class="brand-header">
+                                    <img src="../images/leadseederLogo.avif" alt="Leadseeder" class="brand-logo">
+                                </div>
+                            </th>
+                            <th class="competitor-column">
+                                <div class="brand-header">
+                                    <img src="https://octopuscrm.io/wp-content/uploads/2020/11/LOGO_OCTOPUS.svg" alt="OctopusCRM" class="brand-logo">
+                                </div>
+                            </th>
+                            <th class="competitor-column">
+                                <div class="brand-header">
+                                    <img src="https://cdn.prod.website-files.com/66b222f11ffbb71b9ad39aa5/678e05f05db23bd2a2e15e98_logo%20waalaxy%20white.avif" alt="Wallaxy" class="brand-logo">
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Automated Outreach</td>
+                            <td class="highlight"><i class="fas fa-check-circle"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Multi-Account Support</td>
+                            <td class="highlight"><i class="fas fa-check-circle"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Advanced Analytics</td>
+                            <td class="highlight"><i class="fas fa-check-circle"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Custom Campaigns</td>
+                            <td class="highlight"><i class="fas fa-check-circle"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>White Label Option</td>
+                            <td class="highlight"><i class="fas fa-check-circle"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <td>API Access</td>
+                            <td class="highlight"><i class="fas fa-check-circle"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Pricing Model</td>
+                            <td class="highlight">Lifetime Deal</td>
+                            <td>Monthly Subscription</td>
+                            <td>Monthly Subscription</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What's included in the lifetime deal?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You get lifetime access to all current and future features of Leadseeder for a one-time payment. This includes all updates, new features, and improvements we release in the future.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is there any recurring fee?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, this is a one-time payment with no hidden fees or recurring charges. You'll never be billed again after your initial purchase.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I upgrade my plan later?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you can upgrade to a higher plan at any time by paying the difference in price. We'll prorate the cost based on your current plan.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What if I'm not satisfied?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer a 30-day money back guarantee. If you're not completely satisfied with Leadseeder, we'll give you a full refund, no questions asked.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Section -->
+    <section class="consultation-section">
+        <div class="container">
+            <div class="consultation-card">
+                <div class="consultation-content">
+                    <h2>Still Have Questions?</h2>
+                    <p class="consultation-subtitle">Let's clarify all your doubts in a personalized session</p>
+                    <div class="consultation-options">
+                        <a href="#" class="consultation-btn">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Book a Meet</span>
+                        </a>
+                        <a href="#" class="consultation-btn">
+                            <i class="fas fa-comments"></i>
+                            <span>Chat with Us</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    // ... existing footer code ...
+
+    <script>
+        // Enhanced FAQ toggle with animation
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.nextElementSibling;
+                if (answer) {
+                    if (answer.style.display === 'block') {
+                        answer.style.opacity = '0';
+                        setTimeout(() => {
+                            answer.style.display = 'none';
+                        }, 200);
+                    } else {
+                        answer.style.display = 'block';
+                        setTimeout(() => {
+                            answer.style.opacity = '1';
+                        }, 10);
+                    }
+                }
+            });
+        });
+
+        // Create confetti elements
+        function createConfetti() {
+            const confettiCount = 50;
+            for (let i = 0; i < confettiCount; i++) {
+                const confetti = document.createElement('div');
+                confetti.classList.add('confetti');
+                confetti.style.left = `${Math.random() * 100}vw`;
+                confetti.style.animationDuration = `${Math.random() * 3 + 2}s`;
+                confetti.style.animationDelay = `${Math.random() * 2}s`;
+                document.body.appendChild(confetti);
+            }
+        }
+
+        // Add party text animation
+        function addPartyText() {
+            const heroTitle = document.querySelector('.ltd-hero h1');
+            if (heroTitle) {
+                heroTitle.innerHTML = heroTitle.innerHTML.replace(/Forever/, '<span class="party-text">Forever</span>');
+            }
+        }
+
+        // Initialize animations
+        document.addEventListener('DOMContentLoaded', () => {
+            createConfetti();
+            addPartyText();
+        });
+    </script>
+</body>
+</html> 
