@@ -715,6 +715,79 @@
             color: #666;
             font-size: 0.9rem;
         }
+
+        /* Footer Styles */
+        .footer {
+            background: #1a1c2f;
+            color: white;
+            padding: 4rem 1rem;
+            margin-top: 4rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-section h4 {
+            color: white;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .footer-section p {
+            color: rgba(255,255,255,0.8);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-section ul li a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: #4ade80;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: rgba(255,255,255,0.8);
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #4ade80;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+        }
     </style>
 </head>
 <body>
@@ -732,6 +805,23 @@
             </div>
             <h1>Unlock Leadseeder <span class="highlight party-text">Forever</span></h1>
             <p class="subtitle">Automate your LinkedIn outreach with Leadseeder's powerful features at a <strong>one-time price</strong></p>
+
+            <!-- Hero Video Section -->
+            <div class="hero-video" style="max-width: 800px; margin: 2rem auto 3rem;">
+                <div class="video-container" style="border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
+                    <iframe 
+                        src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen
+                        style="border-radius: 20px;"
+                    ></iframe>
+                </div>
+                <p style="text-align: center; margin-top: 1rem; color: rgba(255,255,255,0.9); font-size: 0.9rem;">
+                    Watch our 2-minute product overview
+                </p>
+            </div>
+
             <div class="hero-cta">
                 <a href="#pricing" class="btn-primary">
                     <span class="cta-text">Get Lifetime Access</span>
@@ -1053,7 +1143,45 @@
     </section>
 
     <!-- Footer -->
-    // ... existing footer code ...
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Leadseeder</h4>
+                    <p>Your ultimate LinkedIn automation tool for smarter outreach and better connections.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: support@leadseeder.com</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Leadseeder. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
     <script>
         // Enhanced FAQ toggle with animation
